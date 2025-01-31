@@ -67,12 +67,12 @@
 ?>
 
 <?php
-	$connection = mysqli_connect('localhost', 'root', '', 'auto')
+	$connection = mysqli_connect('localhost', 'root', '', '5ait_automobili')
 	or die ("ERROR: Cannot connect");
 	
 	$filecorrente=basename($_SERVER['PHP_SELF']);
 
-	$sql = "insert into log (descrizione,utente,nomePagina) values ('Accesso pagina web','NADALON Marco','$filecorrente')";
+	$sql = "insert into log (utente,nomePagina,descrizione) values ('NADALON Marco','$filecorrente','accesso pagina web')";
 	$result = mysqli_query($connection, $sql) or die ("ERROR: " . mysqli_error($connection) . " (query was $sql)");
 
 	mysqli_close($connection);
