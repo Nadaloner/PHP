@@ -1,0 +1,4 @@
+Controlli s esul db non ce gia
+se no -> lo crei
+se si -> errore
+Dopo averlo creato -> salvo dati
