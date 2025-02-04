@@ -63,18 +63,11 @@
 	echo "HTTP_HOST: " . basename($_SERVER['HTTP_HOST']) . "<br>";
 	*/
 	echo "<br><br>";
-	echo "<font color=\"gray\">© Nada 2023-" . date("Y") . "</font>";
+	echo "<font color=\"gray\">© Nadalon 2023-" . date("Y") . "</font>";
 ?>
 
 <?php
-	$connection = mysqli_connect('localhost', 'root', '', '5ait_automobili')
-	or die ("ERROR: Cannot connect");
-	
-	$filecorrente=basename($_SERVER['PHP_SELF']);
-
-	$sql = "insert into log (utente,nomePagina,descrizione) values ('NADALON Marco','$filecorrente','accesso pagina web')";
-	$result = mysqli_query($connection, $sql) or die ("ERROR: " . mysqli_error($connection) . " (query was $sql)");
-
-	mysqli_close($connection);
-
+	if($currentFileName != "005.01.pag0-LetturaDB.php"){
+		include('000_Log.php'); // fatto per fare in modo che nel file che ci serve il log subito non lo salvi 2 volte
+	}
 ?>
