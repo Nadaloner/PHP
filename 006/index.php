@@ -5,8 +5,8 @@
 	</head>
 	<body>
 		<ul>
-			<li><a href="006.01.pag0-ControlloUtente.php" >Creazione utente</a></li>
-			<li><a href="006.01.pag1-AccessoUtente.php" >Accesso utente</a></li>
+			<li><a href="006.01.pag0-ControlloUtente.php" >Registrazione Utente</a></li>
+			<li><a href="006.01.pag2-AccessoUtente.php" >Accesso Utente</a></li>
 			<li><a href="" >...</a></li>
 		</ul>
 		<?PHP
