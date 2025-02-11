@@ -43,3 +43,9 @@
 <?php
     include("../000/000_NavigationMenu.php");
 ?>
+
+CREATE TABLE dati (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user VARCHAR(50) NOT NULL,
+    password VARCHAR(75) NOT NULL
+);

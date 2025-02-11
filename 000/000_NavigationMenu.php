@@ -29,6 +29,14 @@
 		{
 			echo "<li><a href=\"../004/\" target=\"\">Esercizi 004 [...]</a></li>";
 		}
+		if (is_dir("../005/"))
+		{
+			echo "<li><a href=\"../005/\" target=\"\">Esercizi 005 [Connessione DB]</a></li>";
+		}
+		if (is_dir("../006/"))
+		{
+			echo "<li><a href=\"../006/\" target=\"\">Esercizi 006 [Manager Utenti]</a></li>";
+		}
 	?>
 	<!--
 	<li><a href="../005/" target="">Esercizi 005</a></li>

@@ -8,7 +8,7 @@
 	</head>
 	<body>
 		<p>
-			Registrazione Utente
+			<h1>Creazione Utente</h1>
 		</p>
 		<form method="POST" action="<?php echo $_SERVER['PHP_SELF'];?>">
 			Utente: <input type="text" name="utente" required ><br>
@@ -19,8 +19,8 @@
 </html>
 <?PHP
 	} else {
-		$inputUtente =($_POST["utente"]);
-		$inputPass =($_POST["password"]);
+		$inputUtente =trim($_POST["utente"]);
+		$inputPass =trim($_POST["password"]);
 		
 		$pwd = sha1($inputPass);
 		
@@ -43,7 +43,6 @@
 		} else {
 			die("Errore: Qualcosa è andato storto. Riprova più tardi.");
 		}
-
 
 		mysqli_close($connessione);
 	}

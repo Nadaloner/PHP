@@ -5,7 +5,9 @@
 	</head>
 	<body>
 		<ul>
-			<li><a href="006.01.pag0-ControlloUtente.php" >Registrazione Utente</a></li>
+			<li><a href="006.01.pag0-CreazioneUtente.php" >Creazione Utente</a></li>
+			<li><a href="006.01.pag0-ControlloUtente.php" >Controllo Utente</a></li>
+			<li><a href="006.01.pag0-CancellaUtente.php" >Cancella Utente</a></li>
 			<li><a href="006.01.pag2-AccessoUtente.php" >Accesso Utente</a></li>
 			<li><a href="" >...</a></li>
 		</ul>
