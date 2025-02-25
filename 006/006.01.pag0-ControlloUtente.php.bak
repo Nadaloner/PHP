@@ -42,6 +42,9 @@
 		or die ("ERROR: " . mysqli_error($connection) . " (query was $sql)");
 		//echo $result;
 		if (mysqli_num_rows($result) > 0) {
+			header("Location: 006.01.pag1-UtenteVerificato.php");
+		}
+		else{
 			header("Location: 006.01.pag1-Prenotazione.php");
 		}
 		mysqli_close($connection);

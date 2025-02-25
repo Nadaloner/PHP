@@ -5,9 +5,7 @@
 	</head>
 	<body>
 		<p>
-			Account creato con successo!
-			<br>
-			<a href="006.01.pag2-AccessoUtente.php">Accedi qui</a>
+			!! OTTIMO !!
 		</p>
 	</body>
 </html>
